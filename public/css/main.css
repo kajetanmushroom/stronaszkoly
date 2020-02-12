@@ -1,0 +1,60 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 85px;
+    background-color: silver;
+    float: left;
+}
+
+.header__logo {
+    height: 85px;
+    width: auto;
+    border: 1px solid gray;
+    margin: 0 20px;
+    float: left;
+}
+
+.content {
+    width: 100%;
+    min-height: calc(100vh - 85px - 55px); /* cala wysokosc - header - footer */
+    float: left;
+}
+
+.footer {
+    width: 100%;
+    height: 55px;
+    padding: 15px;;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    float: left;
+}
+
+/* base items */
+
+.btn {
+    
+}
+
+.img {
+    float: left;
+}
+
+.img--full {
+    height: 100%;
+    width: auto;
+}
+
+.table--full {
+    width: 100%;
+    height: 100%;
+}

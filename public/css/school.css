@@ -1,0 +1,28 @@
+.school__rating {
+    width: 128px;
+    height: 128px;
+    border: 4px dashed black;
+    padding: 32px;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.school__rating span {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;    
+}
+
+.school__rating--green {
+    background-color: lightgreen;
+}
+.school__rating--orange {
+    background-color: orange;
+}
