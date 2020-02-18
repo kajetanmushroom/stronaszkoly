@@ -1,3 +1,11 @@
+.schoolInfo {
+    width: calc(100% - 60px);
+    padding: 30px;
+    margin: 30px;
+    border: 2px solid gray;
+    float: left;
+}
+
 .school__rating {
     width: 128px;
     height: 128px;
@@ -9,10 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     float: left;
 }
 
-.school__rating span {
+.school__rating .school__rating__title {
     position: absolute;
     bottom: 4px;
     left: 50%;

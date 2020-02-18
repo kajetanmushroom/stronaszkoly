@@ -5,9 +5,9 @@ app.use(express.static('public'))
 const mysql = require('mysql');
 const con = mysql.createConnection({
   host: "remotemysql.com",
-  user: "W5ocH6y7sc",
-  password: "jZCT6D8Ex4",
-  database: "W5ocH6y7sc"
+  user: "VvFC5qfVuc",
+  password: "QRL0XkaF2O",
+  database: "VvFC5qfVuc"
 })
 
 app.get('/api/schools', (req, res) => {
@@ -22,6 +22,16 @@ app.get('/api/schools', (req, res) => {
         res.send(JSON.stringify(result));
     });
     
+});
+
+app.get('/api/school', (req, res) => {
+    let schoolID = req.query.schoolID;
+    con.query('SELECT * FROM schools WHERE ID = ?', [schoolID], (err, result) => {
+        if(err) return console.log(err);
+        console.log(result[0]);
+        
+        res.send(JSON.stringify(result[0]));
+    });
 });
 
 app.listen(8000, () => {
